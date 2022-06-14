@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  /* src: url("./OpenSans-Regular.ttf") format("ttf"); */
+  src: url("./OpenSans-Regular.eot") format("eot");
+  src: url("./OpenSans-Regular.woff") format("woff");
+  src: url("./OpenSans-Regular.woff2") format("woff2");
+}
+
+body{
+    font-family: "Open sans";
+    height: 100%;
+    width: 100vw;
+}
