@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .details-container{
+        @apply w-full flex my-3 bg-gray-300;
+    }
+    .details-container .room-imgs{
+        @apply w-half mx-3 h-full;
+    }
+    .details-container  .room-imgs .room-img-1{
+        @apply w-full mb-2;
+        
+    }
+    .details-container .room-imgs .room-img-1 img{
+        @apply w-full h-full 
+    }
+    .detailsContainer .room-imgs .room-imgs-others{
+        @apply flex items-center mt-3
+    }
+    .detailsContainer .room-imgs .room-imgs-others .other-img{
+        @apply max-w-xs
+    }
+}

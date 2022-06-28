@@ -16,14 +16,14 @@ const roomTypes =["Luxury Room", "Mini suite", "Max Suite"]
   
 
   return (
-    <form className="max-w-xs sm:flex sm:justify-center">
-      <div className="max-w-xs md:ml-50 sm:m-auto my-3 bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
-        <div className="w-full h-16 text-gray-800 bg-gray-300 border-0 flex items-center align-center">
+    <form className="">
+      <div className="max-w-xs md:ml-50 sm:mx-auto my-3 bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
+        <div className="w-full h-16 text-slate-600 bg-gray-300 border-0 flex items-center align-center">
           <h5 className="text-lg px-3 font-bold">
             70+ rooms are available
           </h5>
         </div>
-        <div className=" flex flex-row items-center justify-between px-2 py-2">
+        <div className=" flex flex-row items-center justify-between px-2 py-2 w-full">
           <label className="font-bold">
             FROM:
           </label>

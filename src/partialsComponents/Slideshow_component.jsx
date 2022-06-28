@@ -11,7 +11,6 @@ const Slideshow_component = ({ roomImgs }) => {
   const timeOutRef = useRef(null);
   // roomImgs
   // var roomImages= roomImgs
-  setRoomImgs(roomImgs)
   function resetTimeout() {
     if (timeOutRef.current) {
       clearTimeout(timeOutRef.current);
@@ -19,6 +18,7 @@ const Slideshow_component = ({ roomImgs }) => {
   }
   useEffect(() => {
     resetTimeout();
+    setRoomImgs(roomImgs);
 
     timeOutRef.current = setTimeout(
       () =>
@@ -31,7 +31,7 @@ const Slideshow_component = ({ roomImgs }) => {
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  }, [index, roomImg]);
 
   return (
     <div className="slideShow">
@@ -41,11 +41,7 @@ const Slideshow_component = ({ roomImgs }) => {
       >
         {roomImg.map((img, idx) => (
           <a href="/" className="slide" key={idx}>
-            <img
-              src={getImage(img)}
-              className="slideImg"
-              alt="img component"
-            />
+            <img src={getImage(img)} className="slideImg" alt="img component" />
           </a>
         ))}
       </div>
